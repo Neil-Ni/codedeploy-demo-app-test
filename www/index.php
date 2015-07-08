@@ -1,6 +1,6 @@
 <?php
 
-$AppName = "Demo Testing App";
+$AppName = "Demo App";
 
 ob_start();
 
