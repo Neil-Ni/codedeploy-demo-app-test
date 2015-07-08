@@ -5,12 +5,12 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      circleci-demo-app:
+      circleci-demo-app-test:
         application_root: /
         region: us-east-1
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: glob-bucket-east-1
-            key_pattern: circleci-demo-app-{BRANCH}-{SHORT_COMMIT}
+            bucket: codedeploy-demo-app-test
+            key_pattern: circleci-demo-app-test-{BRANCH}-{SHORT_COMMIT}
         deployment_group: circleci-demo-dg
